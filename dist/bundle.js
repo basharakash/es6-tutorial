@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/lib/index.js):\\nTypeError: C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\src\\\\index.js: Cannot read properties of null (reading 'bindings')\\n    at Scope.moveBindingTo (C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\scope\\\\index.js:1042:13)\\n    at BlockScoping.updateScopeInfo (C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\node_modules\\\\babel-plugin-transform-es2015-block-scoping\\\\lib\\\\index.js:364:17)\\n    at BlockScoping.run (C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\node_modules\\\\babel-plugin-transform-es2015-block-scoping\\\\lib\\\\index.js:330:12)\\n    at PluginPass.BlockStatementSwitchStatementProgram (C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\node_modules\\\\babel-plugin-transform-es2015-block-scoping\\\\lib\\\\index.js:70:24)\\n    at newFn (C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\visitors.js:181:21)\\n    at NodePath._call (C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:53:20)\\n    at NodePath.call (C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:40:17)\\n    at NodePath.visit (C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\path\\\\context.js:100:31)\\n    at TraversalContext.visitQueue (C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:105:16)\\n    at TraversalContext.visitSingle (C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\es6-tutorial\\\\node_modules\\\\@babel\\\\traverse\\\\lib\\\\context.js:79:19)\");\n\n//# sourceURL=webpack://es6-tutorial/./src/index.js?");
+eval("var a = 10;\nvar b = 20;\n\nvar sum = function sum(a, b) {\n  return a + b;\n};\n\nconsole.log(sum(a, b));\n\n//# sourceURL=webpack://es6-tutorial/./src/index.js?");
 
 /***/ })
 
@@ -24,7 +24,7 @@ eval("throw new Error(\"Module build failed (from ./node_modules/babel-loader/li
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = {};
 /******/ 	__webpack_modules__["./src/index.js"]();
 /******/ 	

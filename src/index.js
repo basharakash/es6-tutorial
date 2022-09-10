@@ -1,3 +1,8 @@
 const a = 10;
+const b = 20;
 
-const x = (a, b) => a+b
+
+const sum = (a, b) => a+b;
+
+
+console.log(sum(a,b));
